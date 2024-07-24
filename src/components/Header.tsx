@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { HereWallet } from "@here-wallet/core";
 
 const Header = () =>{
     const [account,setAccount] = useState<string|null>(null);

@@ -1,25 +1,17 @@
 import { useEffect, useState } from "react";
-// import { Silkscreen as FontSilkscreen} from "next/font/google"
 import { HereWallet } from "@here-wallet/core";
 import ImageSlider from "./ImageSlider";
 import CountDownTimer from "./CountDownTimer";
 import Footer from "./Footer";
 import axios from "axios";
-import {  utils } from "near-api-js";
+import { utils } from "near-api-js";
 import Tabs from "./Tabs";
 
 
-// const Silkscreen = FontSilkscreen({
-//     subsets: ["latin"],
-//     weight:"400",
-// })
-
 const Home = () =>{
-    const [accountId,setAccountId] = useState<string|null>(null);
     const [namePet,setNamePet] = useState<string>("DRAGON GREEN");
     const [petLists, setPetLists] = useState<any>([]);
     const [index, setIndex] = useState<number>(0);
-    const [hereWallet, setHereWallet] = useState<any|null>(null)
     const BOATLOAD_OF_GAS = utils.format.parseNearAmount("0.00000000003")!;
     const [account,setAccount] = useState<string|null>(null);
     const [isShow, setIsShow] = useState<boolean>(false);
@@ -60,23 +52,23 @@ const Home = () =>{
         localStorage.setItem("seconds",JSON.stringify(pets.data[0].time_until_starving/10000000))
     }
 
-    const onBuyAccessory = async(itemId:any) =>{
-        const tx = hereWallet.signAndSendTransaction({
-        receiverId: "game1.joychi.testnet",
-        actions: [
-            {
-            type: "FunctionCall",
-            params: {
-            methodName: "buy_item",
-            args: {"pet_id": petLists[index].pet_id, "item_id": itemId },
-            gas: BOATLOAD_OF_GAS,
-            deposit: utils.format.parseNearAmount("0")!,//30000000000000000000000
-            },
-            },
-        ],
-        })
-        console.log("tx",tx)
-    }
+    // const onBuyAccessory = async(itemId:any) =>{
+    //     const tx = hereWallet.signAndSendTransaction({
+    //     receiverId: "game1.joychi.testnet",
+    //     actions: [
+    //         {
+    //         type: "FunctionCall",
+    //         params: {
+    //         methodName: "buy_item",
+    //         args: {"pet_id": petLists[index].pet_id, "item_id": itemId },
+    //         gas: BOATLOAD_OF_GAS,
+    //         deposit: utils.format.parseNearAmount("0")!,//30000000000000000000000
+    //         },
+    //         },
+    //     ],
+    //     })
+    //     console.log("tx",tx)
+    // }
 
 return(
     <div className={`flex flex-col justify-center items-center w-full min-h-screen bg-[#b8e3f8]`}>
