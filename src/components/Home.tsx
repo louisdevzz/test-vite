@@ -77,7 +77,7 @@ return(
                 {status&&(
                         <div className="fixed z-50 bg-[#97b5d5] w-60 h-10 top-5 left-[52%] rounded-lg border-2 border-[#e5f2f8] shadow-sm transform -translate-x-1/2 transition-all delay-75">
                             <div className="flex flex-row w-full px-3 items-center h-full gap-2">
-                                <img width={22} src="/assets/icon/success.svg" alt="success" />
+                                <img width={22} src="/test-vite/assets/icon/success.svg" alt="success" />
                                 <small className="text-[#2d3c53] text-sm font-semibold">{status}</small>
                             </div>
                         </div>
@@ -109,17 +109,17 @@ return(
                     <div className="flex flex-row justify-between px-2 py-2">
                         <div className="flex flex-col gap-1">
                             <div className="flex flex-row gap-2">
-                                <img width={25} src="/assets/item/coin.png" alt="coin" />
+                                <img width={25} src="/test-vite/assets/item/coin.png" alt="coin" />
                                 <p className="text-[#fff]">0.01</p>
                             </div>
                             <div className="flex flex-row gap-2">
-                                <img width={25} src="/assets/item/credit_card.png" alt="coin" />
+                                <img width={25} src="/test-vite/assets/item/credit_card.png" alt="coin" />
                                 <p className="text-[#fff]">19000</p>
                             </div>
                         </div>
                         <div onClick={()=>setIsShow(true)} className="flex flex-row gap-1 items-center -mt-1 ml-4">
                             <p className="text-[#fff]">{namePet}</p>
-                            <img width={14} src="/assets/icon/pen.svg" alt="pen" />
+                            <img width={14} src="/test-vite/assets/icon/pen.svg" alt="pen" />
                         </div>
                         <div className="flex flex-row gap-4 mt-5 items-center">
                         {
@@ -146,7 +146,7 @@ return(
                     <div className="flex flex-col">
                     <div className="mt-2 h-full">
                         <div className="w-full h-[250px] rounded-md flex justify-center flex-row relative">
-                            <img width={60} className="w-full h-full rounded-md" src="/assets/background/screen_pet.png" alt="screen" />
+                            <img width={60} className="w-full h-full rounded-md" src="/test-vite/assets/background/screen_pet.png" alt="screen" />
                             <div className="flex flex-row justify-between">
                                 {/* <img width={10} height={10} className="w-6 h-6 absolute top-1/2 left-[70px] " src="/assets/icon/arrow_left.png" alt="arrow" /> */}
                                 {/* <img width={150} className="absolute top-1/2 left-[53%] transform -translate-x-1/2 -translate-y-1/2" src="/assets/pet/pet.png" alt="pet" /> */}

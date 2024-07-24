@@ -5,15 +5,15 @@ import Mint from "../components/Mint"
 
 const router = createBrowserRouter([
     {
-        path:"/",
+        path:"/test-vite/",
         element:<Home/>
     },
     {
-        path: "/battle",
+        path: "/test-vite/battle",
         element: <Battle/>
     } ,
     {
-        path: "/mint",
+        path: "/test-vite/mint",
         element: <Mint/>
     } 
 ])

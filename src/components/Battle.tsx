@@ -48,7 +48,7 @@ const Battle = () =>{
                             <div className="mt-2 bg-[#a9c6e4] p-3 relative rounded-lg flex flex-row justify-between items-center text-black">
                                 <div className="flex flex-row items-center gap-2">
                                     {petLists.length > 0 &&(
-                                        <img className="-mt-2" width={62} src={`/assets/animation/${petLists[currentIndexPet].category}/${petLists[currentIndexPet].pet_evolution_phase}.gif`} alt="pet" />
+                                        <img className="-mt-2" width={62} src={`/test-vite/assets/animation/${petLists[currentIndexPet].category}/${petLists[currentIndexPet].pet_evolution_phase}.gif`} alt="pet" />
                                     )}
                                     <div className="flex flex-col">
                                         <p className="text-sm">{petLists[currentIndexPet].name}</p>

@@ -11,22 +11,22 @@ const Tabs = () =>{
     const listButton = [
         {
             name:"water",
-            url: "/assets/items/water.png",
+            url: "/test-vite/assets/items/water.png",
             width: 20
         },
         {
             name:"beef",
-            url: "/assets/items/beef.png",
+            url: "/test-vite/assets/items/beef.png",
             width: 40
         },
         {
             name:"shield",
-            url: "/assets/items/shield.png",
+            url: "/test-vite/assets/items/shield.png",
             width: 40
         },
         {
             name:"holy_water",
-            url: "/assets/items/holy_water.png",
+            url: "/test-vite/assets/items/holy_water.png",
             width: 40
         }
     ];
