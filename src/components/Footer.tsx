@@ -10,9 +10,9 @@ const Footer = () =>{
     const currentIndex = Number(localStorage.getItem("linkIndex"))??0;
 
     const ImageButton = [
-        {src: "/test-vite/assets/button/home.png",title: "home",url:"/"},
-        {src: "/test-vite/assets/button/mining.png",title: "mining", url: "/mint"},
-        {src: "/test-vite/assets/button/attack.png",title: "attack", url: "/battle"},
+        {src: "/test-vite/assets/button/home.png",title: "home",url:"/test-vite/"},
+        {src: "/test-vite/assets/button/mining.png",title: "mining", url: "/test-vite/mint"},
+        {src: "/test-vite/assets/button/attack.png",title: "attack", url: "/test-vite/battle"},
         {src: "/test-vite/assets/button/petlist.png",title:"petlist", url: ""},
         {src: "/test-vite/assets/button/training.png",title: "training", url: "/mission"},
     ]

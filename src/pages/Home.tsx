@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { HereWallet } from "@here-wallet/core";
-import ImageSlider from "./ImageSlider";
-import CountDownTimer from "./CountDownTimer";
-import Footer from "./Footer";
+import ImageSlider from "../components/ImageSlider";
+import CountDownTimer from "../components/CountDownTimer";
+import Footer from "../components/Footer";
 import axios from "axios";
 import { utils } from "near-api-js";
-import Tabs from "./Tabs";
+import Tabs from "../components/Tabs";
 
 
 const Home = () =>{
