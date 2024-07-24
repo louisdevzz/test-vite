@@ -23,7 +23,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={login}>
+        <button className='px-3 py-2 border-2 border-gray-200 rounded-lg mb-2 shadow-sm hover:bg-white hover:bg-opacity-15' onClick={login}>
           Connect
         </button>
         <p>
