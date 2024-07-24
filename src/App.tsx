@@ -1,40 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { HereWallet } from '@here-wallet/core'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from "./components/Home"
+import Battle from "./components/Battle"
+import Mint from "./components/Mint"
 
-function App() {
-  const login = async() =>{
-    const here = await HereWallet.connect();
-    const account = await here.signIn({ contractId: "social.near" });
-    console.log(`Hello ${account}!`);
-  }
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button className='px-3 py-2 border-2 border-gray-200 rounded-lg mb-2 shadow-sm hover:bg-white hover:bg-opacity-15' onClick={login}>
-          Connect
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const App = () =>{
+    return(
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/battle" element={<Battle/>} />
+          <Route path="/mint" element={<Mint/>} />
+        </Routes>
+      </BrowserRouter>
+    )
 }
 
-export default App
+export default App;   
